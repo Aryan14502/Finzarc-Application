@@ -21,7 +21,7 @@ export default function Login() {
 
   const handleLogin = async () => {
     try {
-        const res = await fetch("http://localhost:4000/api/login",{
+        const res = await fetch("https://finzarc-application.onrender.com/api/login",{
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export default function Login() {
 
   const handleSignupSubmit = async () => {
     try {
-        const res = await fetch("http://localhost:4000/api/create", {
+        const res = await fetch("https://finzarc-application.onrender.com/api/create", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

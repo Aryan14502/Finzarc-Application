@@ -14,7 +14,7 @@ export default function Home() {
     if (newTask) {
       try {
         const id = Date.now()
-        const res = await fetch("http://localhost:4000/api/add-task", {
+        const res = await fetch("https://finzarc-application.onrender.com/api/add-task", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -42,7 +42,7 @@ export default function Home() {
 
   const handleDeleteTask = async (id) => {
     try {
-      const res = await fetch("http://localhost:4000/api/delete-task", {
+      const res = await fetch("https://finzarc-application.onrender.com/api/delete-task", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json"
@@ -63,7 +63,7 @@ export default function Home() {
   const handleUpdateTask = async (id) => {
     if (updatedTaskName) {
       try {
-        const res = await fetch("http://localhost:4000/api/update-task", {
+        const res = await fetch("https://finzarc-application.onrender.com/api/update-task", {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
@@ -99,7 +99,7 @@ export default function Home() {
 
   const handleViewTask = async() => {
     try {
-      const res = await fetch("http://localhost:4000/api/view-tasks", {
+      const res = await fetch("https://finzarc-application.onrender.com/api/view-tasks", {
         method: "GET",
         headers: {
           "Content-Type": "application/json"
