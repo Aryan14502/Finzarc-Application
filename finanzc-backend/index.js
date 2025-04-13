@@ -5,7 +5,7 @@ const path = require("path");
 require("dotenv").config();
 
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 const TaskFile = path.join(__dirname,'tasks.json')
 const UserFile = path.join(__dirname,'user.json')
 
